@@ -4,5 +4,6 @@ payload:
 
 #微软
   - '+.msftncsi.com'
+  - '+.msftconnecttest.com'
 
 
