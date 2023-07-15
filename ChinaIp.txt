@@ -1,1 +1,1 @@
-
+create china_ip_route hash:net family inet hashsize 1024 maxelem 1000000
