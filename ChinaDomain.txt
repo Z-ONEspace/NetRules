@@ -1,1 +1,1 @@
-server=/alibaba.com/114.114.114.114
+server=/alibaba.com/223.5.5.5
