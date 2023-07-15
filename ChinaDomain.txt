@@ -55,10 +55,10 @@ server=/4399pk.com/223.5.5.5
 server=/5054399.com/223.5.5.5
 server=/img4399.com/223.5.5.5
 
-#58/223.5.5.5
+#58
 server=/58.com/223.5.5.5
 
-#Alibaba/223.5.5.5
+#Alibaba
 server=/1688.com/223.5.5.5
 server=/aliapp.org/223.5.5.5
 server=/alibaba.com/223.5.5.5
@@ -109,7 +109,7 @@ server=/hao123.com/223.5.5.5
 server=/hao123img.com/223.5.5.5
 server=/jomodns.com/223.5.5.5
 server=/yunjiasu-cdn.net/223.5.5.5
-/223.5.5.5
+
 #Bilibili/223.5.5.5
 server=/acg.tv/223.5.5.5
 server=/acgvideo.com/223.5.5.5
