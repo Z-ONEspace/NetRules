@@ -1,1 +1,1 @@
-#https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/accelerated-domains.china.yaml
+#https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/accelerated-domains.china-emp.txt
