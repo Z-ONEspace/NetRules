@@ -1,3 +1,4 @@
+#ttps://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/accelerated-domains.china.txt
 server=/chinatax.gov.cn/223.5.5.5
 server=/gov.cn/223.5.5.5
 server=/feishu.cn/223.5.5.5
