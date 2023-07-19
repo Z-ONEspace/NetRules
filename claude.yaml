@@ -1,0 +1,4 @@
+payload:
+# > claude
+  - '+.claude.ai'
+  - '+.anthropic.com'
