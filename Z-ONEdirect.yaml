@@ -1,5 +1,6 @@
 payload:
 #https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/Z-ONEdirect.yaml
+  - '+.adobe.com'
 # > PayPal
 # - USER-AGENT,PayPal*
   - '+.paypal.com'
