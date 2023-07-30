@@ -1,4 +1,5 @@
 payload:
+  - '+.speedtest.net'
 #谷歌
   - '+.googleapis.cn'
 
