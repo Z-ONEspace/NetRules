@@ -1,6 +1,7 @@
 payload:
 #谷歌
   - '+.googleapis.cn'
+  - '+.ipleak.net'
 
 #微软
   - '+.msftncsi.com'
