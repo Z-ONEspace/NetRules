@@ -25,7 +25,7 @@ payload:
   PROCESS-NAME,fdm
   PROCESS-NAME,aria2c
   PROCESS-NAME,Folx
-# 下载软件
+#下载软件
   PROCESS-NAME,aria2c.exe
   PROCESS-NAME,fdm.exe
   PROCESS-NAME,Folx.exe
