@@ -1,10 +1,10 @@
 payload:
 #https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/Z-ONEdirect.yaml
 # > PayPal
-  - DOMAIN-SUFFIX,paypal.com
-  - DOMAIN-SUFFIX,paypal.me
-  - DOMAIN-SUFFIX,paypal-mktg.com
-  - DOMAIN-SUFFIX,paypalobjects.com
-  - DOMAIN-KEYWORD,paypal
+  - '+.paypal.com'
+  - '+.paypal.me'
+  - '+.paypal-mktg.com'
+  - '+.paypalobjects.com
+  - '+paypal+'
 
   
