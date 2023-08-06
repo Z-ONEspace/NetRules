@@ -24,11 +24,7 @@ PROCESS-NAME,Surge%204
 PROCESS-NAME,fdm
 PROCESS-NAME,aria2c
 PROCESS-NAME,Folx
-PROCESS-NAME,uTorrent
-PROCESS-NAME,aria2c.exe
-PROCESS-NAME,BitComet.exe
-PROCESS-NAME,fdm.exe
-PROCESS-NAME,transmission-daemon.exe
+
 # Mac & Win Download
 PROCESS-NAME,aria2c.exe
 PROCESS-NAME,fdm.exe
@@ -45,6 +41,11 @@ PROCESS-NAME,WebTorrent
 PROCESS-NAME,WebTorrent Helper.exe
 PROCESS-NAME,qBittorrent
 PROCESS-NAME,qbittorrent.exe
+PROCESS-NAME,uTorrent
+PROCESS-NAME,aria2c.exe
+PROCESS-NAME,BitComet.exe
+PROCESS-NAME,fdm.exe
+PROCESS-NAME,transmission-daemon.exe
 # bt
 DOMAIN-SUFFIX,smtp
 DOMAIN-KEYWORD,aria2
