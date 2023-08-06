@@ -1,5 +1,5 @@
 payload:
-# > ChatGPT
+  # > ChatGPT
   - "+.ai.com"
   - "+.openai.com"
   - "+.chat.openai.com.cdn.cloudflare.net"
