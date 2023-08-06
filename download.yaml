@@ -25,7 +25,6 @@ payload:
   PROCESS-NAME,fdm
   PROCESS-NAME,aria2c
   PROCESS-NAME,Folx
-  
 # Mac and Win Download
   PROCESS-NAME,aria2c.exe
   PROCESS-NAME,fdm.exe
