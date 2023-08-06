@@ -1,8 +1,8 @@
 payload:
-#谷歌
+  #谷歌
   - '+.googleapis.cn'
 
-#微软
+  #微软
   - '+.msftncsi.com'
   - '+.msftconnecttest.com'
 
