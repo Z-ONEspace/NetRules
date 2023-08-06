@@ -2,7 +2,7 @@ payload:
   - '+.qualtrics.com'
   - '+.clash.razord.top'
   - '+.yacd.haishan.me'
-# > PayPal
+  # > PayPal
   - '+.paypal.com'
   - '+.paypal.me'
   - '+.paypal-mktg.com'
