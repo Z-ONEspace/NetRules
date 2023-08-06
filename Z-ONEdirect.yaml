@@ -4,3 +4,4 @@ payload:
 # - USER-AGENT,PayPal*
   - '+.paypal.com'
   - '+.paypalobjects.com'
+  - '+.paypal-mktg.com'
