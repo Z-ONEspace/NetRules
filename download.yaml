@@ -1,64 +1,63 @@
-  PROCESS-NAME,v2ray
-  PROCESS-NAME,xray
-  PROCESS-NAME,naive
-  PROCESS-NAME,trojan
-  PROCESS-NAME,trojan-go
-  PROCESS-NAME,ss-local
-  PROCESS-NAME,privoxy
-  PROCESS-NAME,leaf
-  PROCESS-NAME,v2ray.exe
-  PROCESS-NAME,xray.exe
-  PROCESS-NAME,naive.exe
-  PROCESS-NAME,trojan.exe
-  PROCESS-NAME,trojan-go.exe
-  PROCESS-NAME,ss-local.exe
-  PROCESS-NAME,privoxy.exe
-  PROCESS-NAME,leaf.exe
-  PROCESS-NAME,Surge
-  PROCESS-NAME,Surge 2
-  PROCESS-NAME,Surge 3
-  PROCESS-NAME,Surge 4
-  PROCESS-NAME,Surge%202
-  PROCESS-NAME,Surge%203
-  PROCESS-NAME,Surge%204
-  PROCESS-NAME,fdm
-  PROCESS-NAME,aria2c
-  PROCESS-NAME,Folx
-  PROCESS-NAME,uTorrent
-  PROCESS-NAME,aria2c.exe
-  PROCESS-NAME,BitComet.exe
-  PROCESS-NAME,fdm.exe
-  PROCESS-NAME,transmission-daemon.exe
-  # Mac & Win Download
-  PROCESS-NAME,aria2c.exe
-  PROCESS-NAME,fdm.exe
-  PROCESS-NAME,Folx.exe
-  PROCESS-NAME,NetTransport
-  PROCESS-NAME,NetTransport.exe
-  PROCESS-NAME,Thunder.exe
-  PROCESS-NAME,ThunderVIP.exe
-  PROCESS-NAME,Transmission
-  PROCESS-NAME,Transmission.exe
-  PROCESS-NAME,uTorrent.exe
-  PROCESS-NAME,WebTorrent.exe
-  PROCESS-NAME,WebTorrent
-  PROCESS-NAME,WebTorrent Helper.exe
-  PROCESS-NAME,qBittorrent
-  PROCESS-NAME,qbittorrent.exe
-  # bt
-  DOMAIN-SUFFIX,smtp
-  DOMAIN-KEYWORD,aria2
-  URL-REGEX,(Subject|HELO|SMTP)
-  URL-REGEX,(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com
-  URL-REGEX,(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)
-  URL-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?
-  # XunLei
-  URL-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
-  PROCESS-NAME,DownloadService.exe
-  # 360
-  URL-REGEX,(.+\.|^)(360|so)\.(cn|com)
-  # Tencent Weiyun
-  PROCESS-NAME,Weiyun.exe
-  #Baidu disk
-  PROCESS-NAME,baidunetdisk.exe
-
+PROCESS-NAME,v2ray
+PROCESS-NAME,xray
+PROCESS-NAME,naive
+PROCESS-NAME,trojan
+PROCESS-NAME,trojan-go
+PROCESS-NAME,ss-local
+PROCESS-NAME,privoxy
+PROCESS-NAME,leaf
+PROCESS-NAME,v2ray.exe
+PROCESS-NAME,xray.exe
+PROCESS-NAME,naive.exe
+PROCESS-NAME,trojan.exe
+PROCESS-NAME,trojan-go.exe
+PROCESS-NAME,ss-local.exe
+PROCESS-NAME,privoxy.exe
+PROCESS-NAME,leaf.exe
+PROCESS-NAME,Surge
+PROCESS-NAME,Surge 2
+PROCESS-NAME,Surge 3
+PROCESS-NAME,Surge 4
+PROCESS-NAME,Surge%202
+PROCESS-NAME,Surge%203
+PROCESS-NAME,Surge%204
+PROCESS-NAME,fdm
+PROCESS-NAME,aria2c
+PROCESS-NAME,Folx
+PROCESS-NAME,uTorrent
+PROCESS-NAME,aria2c.exe
+PROCESS-NAME,BitComet.exe
+PROCESS-NAME,fdm.exe
+PROCESS-NAME,transmission-daemon.exe
+# Mac & Win Download
+PROCESS-NAME,aria2c.exe
+PROCESS-NAME,fdm.exe
+PROCESS-NAME,Folx.exe
+PROCESS-NAME,NetTransport
+PROCESS-NAME,NetTransport.exe
+PROCESS-NAME,Thunder.exe
+PROCESS-NAME,ThunderVIP.exe
+PROCESS-NAME,Transmission
+PROCESS-NAME,Transmission.exe
+PROCESS-NAME,uTorrent.exe
+PROCESS-NAME,WebTorrent.exe
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,WebTorrent Helper.exe
+PROCESS-NAME,qBittorrent
+PROCESS-NAME,qbittorrent.exe
+# bt
+DOMAIN-SUFFIX,smtp
+DOMAIN-KEYWORD,aria2
+URL-REGEX,(Subject|HELO|SMTP)
+URL-REGEX,(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com
+URL-REGEX,(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)
+URL-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?
+# XunLei
+URL-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
+PROCESS-NAME,DownloadService.exe
+# 360
+URL-REGEX,(.+\.|^)(360|so)\.(cn|com)
+# Tencent Weiyun
+PROCESS-NAME,Weiyun.exe
+#Baidu disk
+PROCESS-NAME,baidunetdisk.exe
