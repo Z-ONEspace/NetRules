@@ -1,4 +1,4 @@
 payload:
-# > claude
+  # > claude
   - '+.claude.ai'
   - '+.anthropic.com'
