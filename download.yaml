@@ -23,7 +23,6 @@ payload:
   - PROCESS-NAME,Surge%203
   - PROCESS-NAME,Surge%204
   - PROCESS-NAME,fdm
-  - PROCESS-NAME,aria2c
   - PROCESS-NAME,Folx
 
 #下载软件
@@ -43,6 +42,7 @@ payload:
   - PROCESS-NAME,qBittorrent
   - PROCESS-NAME,qbittorrent.exe
   - PROCESS-NAME,uTorrent
+  - PROCESS-NAME,aria2c
   - PROCESS-NAME,aria2c.exe
   - PROCESS-NAME,BitComet.exe
   - PROCESS-NAME,fdm.exe
