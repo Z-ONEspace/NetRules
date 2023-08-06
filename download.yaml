@@ -1,5 +1,4 @@
 payload:
-  - IP-CIDR,1.0.1.0/24,no-resolve
   - PROCESS-NAME,v2ray
   - PROCESS-NAME,xray
   - PROCESS-NAME,naive
