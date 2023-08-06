@@ -25,7 +25,7 @@ payload:
   - PROCESS-NAME,fdm
   - PROCESS-NAME,Folx
 
-#下载软件
+  #下载软件
   - PROCESS-NAME,fdm.exe
   - PROCESS-NAME,Folx.exe
   - PROCESS-NAME,NetTransport
@@ -46,7 +46,7 @@ payload:
   - PROCESS-NAME,BitComet.exe
   - PROCESS-NAME,fdm.exe
   - PROCESS-NAME,transmission-daemon.exe
-#微云
+  #微云
   - PROCESS-NAME,Weiyun.exe
-#百度网盘
+  #百度网盘
   - PROCESS-NAME,baidunetdisk.exe
