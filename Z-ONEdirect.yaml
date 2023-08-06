@@ -1,5 +1,4 @@
 payload:
-#https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/Z-ONEdirect.yaml
   - '+.qualtrics.com'
   - '+.clash.razord.top'
   - '+.yacd.haishan.me'
