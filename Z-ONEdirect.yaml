@@ -1,11 +1,12 @@
 payload:
 #https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/Z-ONEdirect.yaml
+  - '+.qualtrics.com'
 # > PayPal
   - '+.paypal.com'
   - '+.paypal.me'
   - '+.paypal-mktg.com'
   - '+.paypalobjects.com
-  - '+.siteintercept.qualtrics.com'
+
 
 
   
