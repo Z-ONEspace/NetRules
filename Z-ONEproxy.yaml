@@ -3,6 +3,7 @@ payload:
   - '+.googleapis.cn'
 
   #微软
+  - '+.bing.com'
   #- '+.msftncsi.com'
   #- '+.msftconnecttest.com'
 
