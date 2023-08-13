@@ -4,7 +4,7 @@ payload:
   - '+.googleapis.cn'
 
   #微软
-  - '+.msftncsi.com'
-  - '+.msftconnecttest.com'
+  #- '+.msftncsi.com'
+  #- '+.msftconnecttest.com'
 
 
