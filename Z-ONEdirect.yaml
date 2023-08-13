@@ -29,6 +29,7 @@ payload:
   - DOMAIN-SUFFIX,yacd.haishan.me
   - DOMAIN-SUFFIX,clash.razord.top
   - DOMAIN-SUFFIX,foxirj.com
+  - DOMAIN-SUFFIX,windwos.com
   
   # > PayPal
   - DOMAIN-SUFFIX,paypal.com
