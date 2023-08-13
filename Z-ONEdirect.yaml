@@ -31,7 +31,7 @@ payload:
   - DOMAIN-SUFFIX,foxirj.com
   - DOMAIN-SUFFIX,msftncsi.com
   - DOMAIN-SUFFIX,msftconnecttest.com
-  - DOMAIN-SUFFIX,time.windwos.com
+  - DOMAIN-SUFFIX,windwos.com
   
   # > PayPal
   - DOMAIN-SUFFIX,paypal.com
