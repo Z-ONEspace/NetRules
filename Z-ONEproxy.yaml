@@ -1,4 +1,5 @@
 payload:
+#https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/Z-ONEdirect.yaml
   #谷歌
   - '+.googleapis.cn'
 
