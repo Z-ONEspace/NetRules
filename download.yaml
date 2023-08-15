@@ -1,4 +1,5 @@
 payload:
+  #https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/download.yaml
   #下载软件
   - PROCESS-NAME,fdm.exe
   - PROCESS-NAME,Folx.exe
