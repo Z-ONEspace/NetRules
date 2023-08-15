@@ -1,5 +1,6 @@
 payload:
   #来源https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Ruleset/TikTok.list
+  #https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/tiktok.yaml
   - DOMAIN-KEYWORD,tiktokcdn
   - DOMAIN-SUFFIX,byteoversea.com
   - DOMAIN-SUFFIX,ibytedtos.com
