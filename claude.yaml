@@ -1,4 +1,5 @@
 payload:
+  #https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/claude.yaml
   # > claude
   - '+.claude.ai'
   - '+.anthropic.com'
