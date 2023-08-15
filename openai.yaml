@@ -1,5 +1,6 @@
 payload:
-#来源https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Providers/Ruleset/OpenAi.yaml
+  #来源https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Providers/Ruleset/OpenAi.yaml
+  #https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/openai.yaml
   - DOMAIN-KEYWORD,openai
   - DOMAIN-SUFFIX,ai.com
   - DOMAIN-SUFFIX,auth0.com
