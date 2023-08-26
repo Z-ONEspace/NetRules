@@ -1,6 +1,5 @@
 payload:
   #https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/Z-ONEdirect.yaml
-  #这是测试行
   - PROCESS-NAME,v2ray
   - PROCESS-NAME,xray
   - PROCESS-NAME,naive
@@ -30,6 +29,7 @@ payload:
   - DOMAIN-SUFFIX,yacd.haishan.me
   - DOMAIN-SUFFIX,clash.razord.top
   - DOMAIN-SUFFIX,foxirj.com
+  - DOMAIN-SUFFIX,tinify.cn
 
   
   # > PayPal
