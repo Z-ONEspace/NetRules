@@ -40,3 +40,6 @@ payload:
   - DOMAIN-SUFFIX,paypal-mktg.com
   - DOMAIN-SUFFIX,paypalobjects.com
   - DOMAIN-KEYWORD,paypal
+
+  # > Diy
+  - DOMAIN-SUFFIX, focodesign.com
