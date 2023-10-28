@@ -42,6 +42,6 @@ payload:
   - DOMAIN-KEYWORD,paypal
 
   # > Diy
-  - DOMAIN-SUFFIX, focodesign.com
-  - DOMAIN-SUFFIX, xue8nav.com
-  - DOMAIN-SUFFIX, webqc.org
+  - DOMAIN-SUFFIX,focodesign.com
+  - DOMAIN-SUFFIX,xue8nav.com
+  - DOMAIN-SUFFIX,webqc.org
