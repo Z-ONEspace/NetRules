@@ -56,10 +56,8 @@ payload:
   - DOMAIN-SUFFIX,cupfox.cc
   - DOMAIN-SUFFIXgimy.is
   - DOMAIN-SUFFIX,agefans.com
-
-age.tv
-
-ww.agedm.org/
+  - DOMAIN-SUFFIX,age.tv
+  - DOMAIN-SUFFIX,agedm.or
 
 
 
