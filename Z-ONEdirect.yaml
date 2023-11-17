@@ -50,7 +50,8 @@ payload:
   - DOMAIN-SUFFIX,hsbianma.com
   - DOMAIN-SUFFIX,shippingchina.com
   - DOMAIN-SUFFIX,ufsoo.com
-
+  - DOMAIN-SUFFIX,leadscoming.com
+  
   # > 小众流媒体
   - DOMAIN-SUFFIX,netfly.tv
   - DOMAIN-SUFFIX,cupfox.cc
@@ -58,7 +59,7 @@ payload:
   - DOMAIN-SUFFIX,agefans.com
   - DOMAIN-SUFFIX,age.tv
   - DOMAIN-SUFFIX,agedm.org
-  - DOMAIN-SUFFIX,leadscoming.com
+
 
 
 
