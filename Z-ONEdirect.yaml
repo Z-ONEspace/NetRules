@@ -25,14 +25,8 @@ payload:
   - PROCESS-NAME,Surge%204
   - PROCESS-NAME,fdm
   - PROCESS-NAME,Folx
-  
   - DOMAIN-SUFFIX,yacd.haishan.me
   - DOMAIN-SUFFIX,clash.razord.top
-  - DOMAIN-SUFFIX,foxirj.com
-  - DOMAIN-SUFFIX,qingteng-inc.com
-
-
-
   
   # > PayPal
   - DOMAIN-SUFFIX,paypal.com
@@ -45,7 +39,8 @@ payload:
   - DOMAIN-SUFFIX,focodesign.com
   - DOMAIN-SUFFIX,xue8nav.com
   - DOMAIN-SUFFIX,webqc.org
-  
+  - DOMAIN-SUFFIX,foxirj.com
+  - DOMAIN-SUFFIX,qingteng-inc.com
   - DOMAIN-SUFFIX,worldfirst.com
   - DOMAIN-SUFFIX,hsbianma.com
   - DOMAIN-SUFFIX,shippingchina.com
