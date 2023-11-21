@@ -46,6 +46,7 @@ payload:
   - DOMAIN-SUFFIX,shippingchina.com
   - DOMAIN-SUFFIX,ufsoo.com
   - DOMAIN-SUFFIX,leadscoming.com
+  - DOMAIN-SUFFIX,webqc.org
   
   # > 小众流媒体
   - DOMAIN-SUFFIX,netfly.tv
