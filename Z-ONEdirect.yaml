@@ -48,7 +48,7 @@ payload:
   - DOMAIN-SUFFIX,leadscoming.com
   - DOMAIN-SUFFIX,webqc.org
   - DOMAIN-SUFFIX,waodown.com
-  - DOMAIN-SUFFIX,sdk.51.la
+  - DOMAIN-SUFFIX,51.la
 
   # > 小众流媒体
   - DOMAIN-SUFFIX,netfly.tv
