@@ -49,6 +49,7 @@ payload:
   - DOMAIN-SUFFIX,webqc.org
   - DOMAIN-SUFFIX,waodown.com
   - DOMAIN-SUFFIX,51.la
+  - DOMAIN-SUFFIX,kaogujia
 
   # > 小众流媒体
   - DOMAIN-SUFFIX,netfly.tv
