@@ -50,6 +50,7 @@ payload:
   - DOMAIN-SUFFIX,waodown.com
   - DOMAIN-SUFFIX,51.la
   - DOMAIN-SUFFIX,kaogujia
+  - DOMAIN-SUFFIX,addog.vip
 
   # > 小众流媒体
   - DOMAIN-SUFFIX,netfly.tv
