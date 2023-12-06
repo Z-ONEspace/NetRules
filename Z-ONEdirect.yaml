@@ -31,6 +31,7 @@ payload:
   - IP-CIDR,45.32.130.75/32,no-resolve
   - IP-CIDR,64.176.83.58/32,no-resolve
   
+  
   # > PayPal
   - DOMAIN-SUFFIX,paypal.com
   - DOMAIN-SUFFIX,paypal.me
