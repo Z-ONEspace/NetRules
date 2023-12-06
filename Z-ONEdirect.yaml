@@ -27,9 +27,9 @@ payload:
   - PROCESS-NAME,Folx
   - DOMAIN-SUFFIX,yacd.haishan.me
   - DOMAIN-SUFFIX,clash.razord.top
-  - IP-CIDR,104.253.85.28/32
-  - IP-CIDR,45.32.130.75/32
-  - IP-CIDR,64.176.83.58/32
+  - IP-CIDR,104.253.85.28/32,no-resolve
+  - IP-CIDR,45.32.130.75/32,no-resolve
+  - IP-CIDR,64.176.83.58/32,no-resolve
   
   # > PayPal
   - DOMAIN-SUFFIX,paypal.com
