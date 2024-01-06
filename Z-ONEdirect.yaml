@@ -1,474 +1,66 @@
-######### 锚点 start #######
-# proxy 相关
-pr: &pr {type: select, proxies: [DIRECT,常规代理]}
-
-#这里是订阅更新和延迟测试相关的
-p: &p {type: http, interval: 3600, health-check: {enable: true, url: https://www.gstatic.com/generate_204, interval: 300}}
-
-######### 锚点 end #######
-
-
-#订阅的节点
-proxy-providers:
- westdata:
-   <<: *p
-   path: ./proxy_provider/westdata.yaml
-   url: https://api.fuqing.ch/sub?target=clash&emoji=true&udp=true&scv=true&new_name=true&filename=WD_Trojan&url=https%3A%2F%2Ffuqing.ch%2Fsubscribe%2Fgevbk-tp_hgk9j
-
-  #westdata的节点名称
-  #hong kong|taiwan|japan|united states|singapore|united kingdom|korea|india|germany|canada|italy|australia|spain|vietnam|thailand|malaysia|johannesburg|argentina|netherlands|chile
-
-
-#面板登录
-external-controller: 0.0.0.0:6890
-external-ui: ui
-secret: DAhuer#3913
-
-#SOCKS/HTTP代理验证
-authentication: [""]
-
-port: 6891
-socks-port: 6892
-mixed-port: 6893
-redir-port: 6894
-tproxy-port: 6895
-allow-lan: true
-mode: Rule
-log-level: info
-ipv6: false
-store-selected: true
-#experimental: {ignore-resolve-fail: true, interface-name: en0}
-
-
-geodata-mode: true
-geox-url:
-  geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
-  geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
-  mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
-
-dns:
-  enable: true
-  listen: 0.0.0.0:1053
-  ipv6: false
-  #默认 dns, 用于解析 DNS 服务器 的域名
-  default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - '*.lan'
-    - '*.localdomain'
-    - '*.example'
-    - '*.invalid'
-    - '*.localhost'
-    - '*.test'
-    - '*.local'
-    - '*.home.arpa'
-    - 'time.*.com'
-    - 'time.*.gov'
-    - 'time.*.edu.cn'
-    - 'time.*.apple.com'
-    - 'time1.*.com'
-    - 'time2.*.com'
-    - 'time3.*.com'
-    - 'time4.*.com'
-    - 'time5.*.com'
-    - 'time6.*.com'
-    - 'time7.*.com'
-    - 'ntp.*.com'
-    - 'ntp1.*.com'
-    - 'ntp2.*.com'
-    - 'ntp3.*.com'
-    - 'ntp4.*.com'
-    - 'ntp5.*.com'
-    - 'ntp6.*.com'
-    - 'ntp7.*.com'
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - '+.pool.ntp.org'
-    - 'time1.cloud.tencent.com'
-    - 'music.163.com'
-    - '*.music.163.com'
-    - '*.126.net'
-    - 'musicapi.taihe.com'
-    - 'music.taihe.com'
-    - 'songsearch.kugou.com'
-    - 'trackercdn.kugou.com'
-    - '*.kuwo.cn'
-    - 'api-jooxtt.sanook.com'
-    - 'api.joox.com'
-    - 'joox.com'
-    - 'y.qq.com'
-    - '*.y.qq.com'
-    - 'streamoc.music.tc.qq.com'
-    - 'mobileoc.music.tc.qq.com'
-    - 'isure.stream.qqmusic.qq.com'
-    - 'dl.stream.qqmusic.qq.com'
-    - 'aqqmusic.tc.qq.com'
-    - 'amobile.music.tc.qq.com'
-    - '*.xiami.com'
-    - '*.music.migu.cn'
-    - 'music.migu.cn'
-    - 'time.windows.com'
-    - '+.msftconnecttest.com'
-    - '+.msftncsi.com'
-    - 'localhost.ptlogin2.qq.com'
-    - 'localhost.sec.qq.com'
-    - '+.srv.nintendo.net'
-    - '+.stun.playstation.net'
-    - 'xbox.*.microsoft.com'
-    - 'xnotify.xboxlive.com'
-    - '+.ipv6.microsoft.com'
-    - '+.battlenet.com.cn'
-    - '+.wotgame.cn'
-    - '+.wggames.cn'
-    - '+.wowsgame.cn'
-    - '+.wargaming.net'
-    - 'proxy.golang.org'
-    - 'stun.*.*'
-    - 'stun.*.*.*'
-    - '+.stun.*.*'
-    - '+.stun.*.*.*'
-    - '+.stun.*.*.*.*'
-    - 'heartbeat.belkin.com'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - '*.router.asus.com'
-    - 'mesu.apple.com'
-    - 'swscan.apple.com'
-    - 'swquery.apple.com'
-    - 'swdownload.apple.com'
-    - 'swcdn.apple.com'
-    - 'swdist.apple.com'
-    - 'lens.l.google.com'
-    - 'stun.l.google.com'
-    - '*.square-enix.com'
-    - '*.finalfantasyxiv.com'
-    - '*.ffxiv.com'
-    - '*.ff14.sdo.com'
-    - 'ff.dorado.sdo.com'
-    - '*.mcdn.bilivideo.cn'
-    - '+.media.dssott.com'
-    - '+.pvp.net'
-
-  #默认的域名解析服务器，如不配置 fallback/proxy-server-nameserver , 则所有域名都由 nameserver 解析
-  nameserver:
-    - https://doh.pub/dns-query
-    - dns.alidns.com
-    #- 223.5.5.5
-    #- 119.29.29.29
-    #- 8.8.8.8
-
-  #代理节点域名解析服务器，仅用于解析代理节点的域名
-  proxy-server-nameserver:
-    - dns.google
-    - https://1.0.0.1/dns-query
-  fallback:
-    - dns.google
-    - https://1.0.0.1/dns-query
-  fallback-filter:
-    #domain这些域名被视为已污染，匹配到这些域名，会直接使用 fallback解析，不去使用 nameserver
-    domain:
-      - '+.bing.com'
-      - '+.linkedin.com'
-      - '+.github.com'
-      - '+.facebook.com'
-      - '+.twitter.com'
-      - '+.google.com'
-      - '+.googleapis.com'
-      - '+.google.cn'
-      - '+.googleapis.cn'
-      - '+.xn--ngstr-lra8j.com'
-      - '+.googlevideo.com'
-      - '+.gvt1.com'
-      - '+.gmail.com'
-      - '+.youtube.com'
-      - '+.youtu.be'
-      - '+.gvt0.com'
-      - '+.gvt2.com'
-      - '+.gvt3.com'
-      - '+.gstatic.com'
-      - '+.265.com'
-      - '+.2mdn.net'
-      - '+.app-measurement.com'
-      - '+.c.admob.com'
-      - '+.clickserve.dartsearch.net'
-      - '+.crl.pki.goog'
-      - '+.doubleclick.net'
-      - '+.firebase-settings.crashlytics.com'
-      - '+.google-analytics.com'
-      - '+.googleadservices.com'
-      - '+.googleanalytics.com'
-      - '+.googleoptimize.com'
-      - '+.googlesyndication.com'
-      - '+.googletagmanager.com'
-      - '+.googletagservices.com'
-  nameserver-policy:
-    #"+.time.windows.com": 223.5.5.5
-    #"+.msftconnecttest.com": 223.5.5.5
-    #"+.msftncsi.com": 223.5.5.5
+payload:
+  #https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/Z-ONEdirect.yaml
+  - PROCESS-NAME,v2ray
+  - PROCESS-NAME,xray
+  - PROCESS-NAME,naive
+  - PROCESS-NAME,trojan
+  - PROCESS-NAME,trojan-go
+  - PROCESS-NAME,ss-local
+  - PROCESS-NAME,privoxy
+  - PROCESS-NAME,leaf
+  - PROCESS-NAME,v2ray.exe
+  - PROCESS-NAME,xray.exe
+  - PROCESS-NAME,naive.exe
+  - PROCESS-NAME,trojan.exe
+  - PROCESS-NAME,trojan-go.exe
+  - PROCESS-NAME,ss-local.exe
+  - PROCESS-NAME,privoxy.exe
+  - PROCESS-NAME,leaf.exe
+  - PROCESS-NAME,Surge
+  - PROCESS-NAME,Surge 2
+  - PROCESS-NAME,Surge 3
+  - PROCESS-NAME,Surge 4
+  - PROCESS-NAME,Surge%202
+  - PROCESS-NAME,Surge%203
+  - PROCESS-NAME,Surge%204
+  - PROCESS-NAME,fdm
+  - PROCESS-NAME,Folx
+  - DOMAIN-SUFFIX,yacd.haishan.me
+  - DOMAIN-SUFFIX,clash.razord.top
+  - IP-CIDR,45.32.130.75/32,no-resolve
+  - IP-CIDR,185.218.7.144/32,no-resolve
+  - IP-CIDR,166.88.77.207/32,no-resolve
+  
+  # > PayPal
+  - DOMAIN-SUFFIX,paypal.com
+  - DOMAIN-SUFFIX,paypal.me
+  - DOMAIN-SUFFIX,paypal-mktg.com
+  - DOMAIN-SUFFIX,paypalobjects.com
+  - DOMAIN-KEYWORD,paypal
 
 
-
-#自定义节点
-proxies:
-  #sal | vless-reality-vision
-  - {name: "VPS | 加州-saltyfish", type: vless, server: 185.218.7.144, port: 443, uuid: af71c6e8-66ee-42c4-ad57-1e2c9f1723a6, network: tcp, tls: true, udp: true, flow: xtls-rprx-vision, servername: www.dreamtypewriter.top, client-fingerprint: chrome, reality-opts: {public-key: S-g0oP36DShii1uPOnZDSEhp_wQghX6h68PgMivOmD4}}
-
-  #evo | vless-reality-vision
-  - {name: "VPS | 香港-evoxt", type: vless, server: 166.88.77.207, port: 443, uuid: 14ee8753-8926-48a7-9480-d6e662011298, network: tcp, tls: true, udp: true, flow: xtls-rprx-vision, servername: 7b7.net, client-fingerprint: chrome, reality-opts: {public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY}}
-
-
-  #vul | vless-reality-vision
-  - {name: "VPS | 硅谷-vultr", type: vless, server: 45.32.130.75, port: 443, uuid: a324e247-fec4-4e69-cd33-a1b179069516, network: tcp, tls: true, udp: true, flow: xtls-rprx-vision, servername: www.tvrepairtips.org, client-fingerprint: chrome, reality-opts: {public-key: IiuIighvDsor2v-vb5s3IJbNiqwLw568auiqoXxc7FM}}
-
-
-  #trojan-ws
-  # - {name: "VPS04 | 加州", server: www.sufsea.top, port: 56878, type: trojan, password: UreKnG7vYT, sni: www.sufsea.top, skip-cert-verify: false, udp: true}
-
-
-proxy-groups:
-  - {name: 常规代理, type: select,  proxies: [VPS | 加州-saltyfish,VPS | 香港-evoxt,VPS | 硅谷-vultr]}
-  - {name: AI, type: select, filter: "(?i)japan|united states|singapore", proxies: [VPS | 加州-saltyfish]}
-  - {name: 微软|谷歌, type: select, filter: "(?i)hong kong|united states|singapore", proxies: [VPS | 加州-saltyfish,VPS | 香港-evoxt]}
-  - {name: 社媒, type: select, filter: "(?i)hong kong|taiwan|united states|singapore|japan|united kingdom|korea|germany|canada|italy|australia", proxies: [VPS | 加州-saltyfish,VPS | 香港-evoxt]}
-  - {name: 规则外,<<: *pr}
-
-  # - {name: 常规代理, type: select, use: [westdata], proxies: [VPS | 加州-saltyfish,VPS | 香港-evoxt,VPS | 硅谷-vultr]}
-  # - {name: AI, type: select, use: [westdata], filter: "(?i)japan|united states|singapore", proxies: [VPS | 加州-saltyfish]}
-  # - {name: 微软|谷歌, type: select, use: [westdata], filter: "(?i)hong kong|united states|singapore", proxies: [VPS | 加州-saltyfish,VPS | 香港-evoxt]}
-  # - {name: 社媒, type: select, use: [westdata], filter: "(?i)hong kong|taiwan|united states|singapore|japan|united kingdom|korea|germany|canada|italy|australia", proxies: [VPS | 加州-saltyfish,VPS | 香港-evoxt]}
-  # - {name: 规则外,<<: *pr}
-
-#规则集
-rule-providers:
-  Z-ONEdirect:
-    type: http
-    behavior: classical
-    path: ./rule_provider/Z-ONEdirect.yaml
-    #url: https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/Z-ONEdirect.yaml
-    url: https://raw.githubusercontent.com/Z-ONEspace/NetRules/main/Z-ONEdirect.yaml
-    interval: 86400
-  Z-ONEproxy:
-    type: http
-    behavior: domain
-    path: ./rule_provider/Z-ONEproxy.yaml
-    url: https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/Z-ONEproxy.yaml
-    interval: 86400
-  Z-ONEproxy(nochina):
-    type: http
-    behavior: domain
-    path: ./rule_provider/Z-ONEproxy(nochina).yaml
-    url: https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/Z-ONEproxy(nochina).yaml
-    interval: 86400
-  download:
-    type: http
-    behavior: classical
-    path: ./rule_provider/download.yaml
-    url: https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/download.yaml
-    interval: 86400
-  claude:
-    type: http
-    behavior: domain
-    path: ./rule_provider/claude.yaml
-    url: https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/claude.yaml
-    interval: 86400
-  openai:
-    type: http
-    behavior: classical
-    path: ./rule_provider/openai.yaml
-    url: https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/openai.yaml
-    interval: 86400
-  tiktok:
-    type: http
-    behavior: classical
-    path: ./rule_provider/tiktok.yaml
-    url: https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/tiktok.yaml
-    interval: 86400
-
-# Loyalsoldier
-  proxy:
-    type: http
-    behavior: domain
-    path: ./rule_provider/proxy.yaml
-    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt
-    interval: 86400
-  direct:
-    type: http
-    behavior: domain
-    path: ./rule_provider/direct.yaml
-    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
-    interval: 86400
-  reject:
-    type: http
-    behavior: domain
-    path: ./rule_provider/reject.yaml
-    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
-    interval: 86400
-  private:
-    type: http
-    behavior: domain
-    path: ./rule_provider/private.yaml
-    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
-    interval: 86400
+  # > Diy
+  - DOMAIN-SUFFIX,focodesign.com
+  - DOMAIN-SUFFIX,xue8nav.com
+  - DOMAIN-SUFFIX,webqc.org
+  - DOMAIN-SUFFIX,foxirj.com
+  - DOMAIN-SUFFIX,qingteng-inc.com
+  - DOMAIN-SUFFIX,worldfirst.com
+  - DOMAIN-SUFFIX,hsbianma.com
+  - DOMAIN-SUFFIX,shippingchina.com
+  - DOMAIN-SUFFIX,ufsoo.com
+  - DOMAIN-SUFFIX,leadscoming.com
+  - DOMAIN-SUFFIX,webqc.org
+  - DOMAIN-SUFFIX,waodown.com
+  - DOMAIN-SUFFIX,51.la
+  - DOMAIN-SUFFIX,kaogujia.com
+  - DOMAIN-SUFFIX,addog.vip
 
 
-  icloud:
-    type: http
-    behavior: domain
-    path: ./rule_provider/icloud.yaml
-    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
-    interval: 86400
-  apple:
-    type: http
-    behavior: domain
-    path: ./rule_provider/apple.yaml
-    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
-    interval: 86400
-  telegramcidr:
-    type: http
-    behavior: ipcidr
-    path: ./rule_provider/telegramcidr.yaml
-    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
-    interval: 86400
-
-
-
-
-# ACL4SSR
-  ChinaCompanyIp:
-    type: http
-    behavior: ipcidr
-    path: ./rule_provider/ChinaCompanyIp.yaml
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaCompanyIp.yaml
-    interval: 86400
-  ChinaIp:
-    type: http
-    behavior: ipcidr
-    path: ./rule_provider/ChinaIp.yaml
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaIp.yaml
-    interval: 86400
-
-  Google:
-    type: http
-    behavior: classical
-    path: ./rule_provider/Google.yaml
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Google.yaml
-    interval: 86400
-  GoogleEarth:
-    type: http
-    behavior: classical
-    path: ./rule_provider/GoogleEarth.yaml
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/GoogleEarth.yaml
-    interval: 86400
-  GoogleFCM:
-    type: http
-    behavior: classical
-    path: ./rule_provider/GoogleFCM.yaml
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/GoogleFCM.yaml
-    interval: 86400
-  GoogleCNProxyIP:
-    type: http
-    behavior: classical
-    path: ./rule_provider/GoogleCNProxyIP.yaml
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/GoogleCNProxyIP.yaml
-    interval: 86400
-  GoogleCN:
-    type: http
-    behavior: classical
-    path: ./rule_provider/GoogleCN.yaml
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/GoogleCN.yaml
-    interval: 86400
-  Microsoft:
-    type: http
-    behavior: classical
-    path: ./rule_provider/Microsoft.yaml
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Microsoft.yaml
-    interval: 86400
-  OneDrive:
-    type: http
-    behavior: classical
-    path: ./rule_provider/onedrive.yaml
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/OneDrive.yaml
-    interval: 86400
-
-
-  Facebook:
-    type: http
-    behavior: classical
-    path: ./rule_provider/Facebook.yaml
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Facebook.yaml
-    interval: 86400
-  Instagram:
-    type: http
-    behavior: classical
-    path: ./rule_provider/Instagram.yaml
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Instagram.yaml
-    interval: 86400
-  Twitter:
-    type: http
-    behavior: classical
-    path: ./rule_provider/Twitter.yaml
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Twitter.yaml
-    interval: 86400
-  Whatsapp:
-    type: http
-    behavior: classical
-    path: ./rule_provider/Whatsapp.yaml
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Whatsapp.yaml
-    interval: 86400
-  YouTube:
-    type: http
-    behavior: classical
-    path: ./rule_provider/YouTube.yaml
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/YouTube.yaml
-    interval: 86400
-  YouTubeMusic:
-    type: http
-    behavior: classical
-    path: ./rule_provider/YouTubeMusic.yaml
-    url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/YouTubeMusic.yaml
-    interval: 86400
-# 分流规则
-rules:
-  - RULE-SET,Z-ONEdirect,DIRECT
-  - RULE-SET,Z-ONEproxy(nochina),AI
-  - RULE-SET,Z-ONEproxy,常规代理
-
-  #- RULE-SET,reject,REJECT
-  - RULE-SET,download,DIRECT
-  - RULE-SET,private,DIRECT
-
-
-  - RULE-SET,tiktok,社媒
-  - RULE-SET,Facebook,社媒
-  - RULE-SET,Instagram,社媒
-  - RULE-SET,Twitter,社媒
-  - RULE-SET,Whatsapp,社媒
-
-
-  - RULE-SET,claude,AI
-  - RULE-SET,openai,AI
-
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,YouTube,微软|谷歌
-  - RULE-SET,YouTubeMusic,微软|谷歌
-  - RULE-SET,Google,微软|谷歌
-  - RULE-SET,GoogleEarth,微软|谷歌
-  - RULE-SET,GoogleFCM,微软|谷歌
-  - RULE-SET,GoogleCNProxyIP,微软|谷歌
-  - RULE-SET,GoogleCN,微软|谷歌
-  - RULE-SET,Microsoft,微软|谷歌
-  - RULE-SET,OneDrive,微软|谷歌
-  - RULE-SET,icloud,DIRECT
-  - RULE-SET,telegramcidr,常规代理,no-resolve
-
-  - RULE-SET,proxy,常规代理
-  - RULE-SET,direct,DIRECT
-
-  - RULE-SET,ChinaIp,DIRECT,no-resolve
-  - RULE-SET,ChinaCompanyIp,DIRECT,no-resolve
-  - GEOIP,CN,DIRECT,no-resolve
-
-  - MATCH,规则外
+  # > 小众流媒体
+  - DOMAIN-SUFFIX,netfly.tv
+  - DOMAIN-SUFFIX,cupfox.cc
+  - DOMAIN-SUFFIX,gimy.is
+  - DOMAIN-SUFFIX,agefans.com
+  - DOMAIN-SUFFIX,age.tv
+  - DOMAIN-SUFFIX,agedm.org
