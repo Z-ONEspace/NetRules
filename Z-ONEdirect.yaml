@@ -57,6 +57,12 @@ payload:
   - DOMAIN-SUFFIX,addog.vip
   - DOMAIN-SUFFIX,dupay.one
 
+  # > VK
+  - DOMAIN-SUFFIX,vkuser.net
+  - DOMAIN-SUFFIX,vk.ru
+  - DOMAIN-SUFFIX,vk.com
+  - DOMAIN-KEYWORD,vkvd
+
 
   # > 小众流媒体
   - DOMAIN-SUFFIX,netfly.tv
