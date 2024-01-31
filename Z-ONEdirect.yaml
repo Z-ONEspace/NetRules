@@ -62,6 +62,7 @@ payload:
   - DOMAIN-SUFFIX,vk.ru
   - DOMAIN-SUFFIX,vk.com
   - DOMAIN-KEYWORD,vkvd
+  - DOMAIN-SUFFIX,mycdn.me
 
 
   # > 小众流媒体
