@@ -27,7 +27,6 @@ payload:
   - PROCESS-NAME,Folx
   - DOMAIN-SUFFIX,yacd.haishan.me
   - DOMAIN-SUFFIX,clash.razord.top
-  - IP-CIDR,45.32.130.75/32,no-resolve
   - IP-CIDR,185.218.7.144/32,no-resolve
 
   
