@@ -65,6 +65,8 @@ payload:
 
   # > 小众流媒体
   - DOMAIN-SUFFIX,netfly.tv
+  - DOMAIN-SUFFIX,netfly.fun
+  - DOMAIN-SUFFIX,nfly.cc
   - DOMAIN-SUFFIX,cupfox.cc
   - DOMAIN-SUFFIX,gimy.is
   - DOMAIN-SUFFIX,agefans.com
