@@ -2,5 +2,6 @@ payload:
 #https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/Z-ONEproxy.yaml
   - +.oxygen7.cn
   - +.masto.ai
+  - +.chatbase.co
 
 
