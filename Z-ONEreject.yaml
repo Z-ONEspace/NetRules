@@ -1,4 +1,4 @@
 payload:
-  #
+  #https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/Z-ONEreject.yaml
   # > list
-  - sample
+  - DOMAIN-SUFFIX,adobe.io,REJECT
