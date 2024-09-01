@@ -55,7 +55,7 @@ payload:
   - DOMAIN-SUFFIX,kaogujia.com
   - DOMAIN-SUFFIX,addog.vip
   - DOMAIN-SUFFIX,dupay.one
-  - DOMAIN,lcs-cops.adobe.io,DIRECT
+  - DOMAIN,lcs-cops.adobe.io
 
   # > VK
   - DOMAIN-SUFFIX,vkuser.net
