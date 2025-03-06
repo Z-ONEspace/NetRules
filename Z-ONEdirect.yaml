@@ -56,7 +56,6 @@ payload:
   - DOMAIN-SUFFIX,addog.vip
   - DOMAIN-SUFFIX,dupay.one
   - DOMAIN,lcs-cops.adobe.io
-  - DOMAIN,saltyfish.io
 
   # > VK
   - DOMAIN-SUFFIX,vkuser.net
