@@ -67,6 +67,7 @@ payload:
   - DOMAIN-SUFFIX,adobe.com
   - DOMAIN,lcs-cops.adobe.io
   - DOMAIN-SUFFIX,adobestats.io
+  - DOMAIN-SUFFIX,adobeccstatic.com
   - DOMAIN-SUFFIX,typekit.net
   - DOMAIN-SUFFIX,sentry.io
   - DOMAIN-SUFFIX,adobelogin.com
