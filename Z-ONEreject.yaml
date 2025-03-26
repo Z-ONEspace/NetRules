@@ -2,7 +2,6 @@ payload:
   #https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/Z-ONEreject.yaml
   # > Adobe
   - DOMAIN-SUFFIX,adobe.io
-  - DOMAIN-SUFFIX,xx.io
   - DOMAIN-SUFFIX,lm.licenses.adobe.com
   - DOMAIN-SUFFIX,na2m-pr.licenses.adobe.com
   - DOMAIN-SUFFIX,practivate.adobe.com
