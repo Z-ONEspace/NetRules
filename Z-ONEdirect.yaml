@@ -66,11 +66,13 @@ payload:
   # > Adobe
   - DOMAIN-SUFFIX,adobe.com
   - DOMAIN,lcs-cops.adobe.io
+  - DOMAIN-SUFFIX,adobestats.io
   - DOMAIN-SUFFIX,practivate.adobe
   - DOMAIN-SUFFIX,practivate.adobe.com
   - DOMAIN-SUFFIX,practivate.adobe.ipp
   - DOMAIN-SUFFIX,practivate.adobe.newoa
   - DOMAIN-SUFFIX,practivate.adobe.ntp
+
   
   # > 小众流媒体
   - DOMAIN-SUFFIX,netfly.tv
