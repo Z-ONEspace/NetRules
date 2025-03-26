@@ -55,7 +55,6 @@ payload:
   - DOMAIN-SUFFIX,kaogujia.com
   - DOMAIN-SUFFIX,addog.vip
   - DOMAIN-SUFFIX,dupay.one
-  - DOMAIN,lcs-cops.adobe.io
   - DOMAIN,saltyfish.io
 
   # > VK
@@ -64,7 +63,15 @@ payload:
   - DOMAIN-SUFFIX,vk.com
   - DOMAIN-SUFFIX,mycdn.me
 
-
+  # > Adobe
+  - DOMAIN-SUFFIX,adobe.com
+  - DOMAIN,lcs-cops.adobe.io
+  - DOMAIN-SUFFIX,practivate.adobe
+  - DOMAIN-SUFFIX,practivate.adobe.com
+  - DOMAIN-SUFFIX,practivate.adobe.ipp
+  - DOMAIN-SUFFIX,practivate.adobe.newoa
+  - DOMAIN-SUFFIX,practivate.adobe.ntp
+  
   # > 小众流媒体
   - DOMAIN-SUFFIX,netfly.tv
   - DOMAIN-SUFFIX,netfly.fun
