@@ -55,6 +55,7 @@ payload:
   - DOMAIN-SUFFIX,kaogujia.com
   - DOMAIN-SUFFIX,addog.vip
   - DOMAIN,saltyfish.io
+  - DOMAIN,dupay.one
 
   # > VK
   - DOMAIN-SUFFIX,vkuser.net
