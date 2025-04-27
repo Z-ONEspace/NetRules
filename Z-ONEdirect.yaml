@@ -54,7 +54,7 @@ payload:
   - DOMAIN-SUFFIX,51.la
   - DOMAIN-SUFFIX,kaogujia.com
   - DOMAIN-SUFFIX,addog.vip
-  - DOMAIN,saltyfish.io
+  - DOMAIN-SUFFIX,saltyfish.io
   - DOMAIN-SUFFIX,dupay.one
   - DOMAIN-SUFFIX,depay.com
 
