@@ -58,8 +58,7 @@ payload:
   - DOMAIN-SUFFIX,dupay.one
   - DOMAIN-SUFFIX,depay.com
   - DOMAIN-SUFFIX,depay.hexagramglobal.com
-  - DOMAIN-SUFFIX,raw.githubusercontent.com
-  - DOMAIN-SUFFIX,cdn.jsdelivr.net
+
 
 
   # > VK
