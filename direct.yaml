@@ -1,3 +1,4 @@
+#来源https://github.com/Loyalsoldier/clash-rules/tree/release/direct.txt Released on 202503182240
 payload:
   - '265.com'
   - '2mdn-cn.net'
