@@ -1,5 +1,6 @@
 payload:
   #https://cdn.jsdelivr.net/gh/Z-ONEspace/NetRules@main/Z-ONEreject.yaml
+  #测试
   # > Adobe
   - DOMAIN-SUFFIX,adobe.io
   - DOMAIN-SUFFIX,adobestats.io
