@@ -29,7 +29,7 @@ payload:
   - DOMAIN-SUFFIX,clash.razord.top
   - IP-CIDR,185.218.7.144/32,no-resolve
 
-  
+
   # > PayPal
   - DOMAIN-SUFFIX,paypal.com
   - DOMAIN-SUFFIX,paypal.me
@@ -58,6 +58,7 @@ payload:
   - DOMAIN-SUFFIX,dupay.one
   - DOMAIN-SUFFIX,depay.com
   - DOMAIN-SUFFIX,depay.hexagramglobal.com
+  - DOMAIN-SUFFIX,gz-eport.com
 
 
 
@@ -69,7 +70,7 @@ payload:
 
 
 
-  
+
   # > 小众流媒体
   - DOMAIN-SUFFIX,netfly.tv
   - DOMAIN-SUFFIX,netfly.fun
