@@ -38,6 +38,12 @@ payload:
   - DOMAIN-KEYWORD,paypal
 
 
+  # > outlook
+  - DOMAIN-SUFFIX,outlook.office365.com
+  - DOMAIN-SUFFIX,outlook.com
+  - DOMAIN-SUFFIX,outlookmobile.com
+
+
   # > Diy
   - DOMAIN-SUFFIX,focodesign.com
   - DOMAIN-SUFFIX,xue8nav.com
